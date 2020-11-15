@@ -1,0 +1,497 @@
+:root {
+  --mainBgColor: #f7f7f7;
+  --mainGradient: -webkit-linear-gradient(
+    135deg,
+    #2562ad 30%,
+    #ffffff 49%,
+    #2562ad 70%
+  );
+  --mainFontColor: #2e4964;
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: secondFont;
+  src: url(../fonts/impact.ttf);
+}
+@font-face {
+  font-family: mainFont;
+  src: url(../fonts/unicode.palatino.ttf);
+}
+* {
+  margin: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+}
+.overlaay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.overlayNavy {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 49, 77, 0.9);
+  z-index: 2;
+  padding: 10px 0px;
+}
+.overlayNavy a {
+  text-decoration: none;
+  color: white;
+}
+.redOverlay {
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(201, 51, 59, 0.9); */
+  background: rgb(255, 196, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 196, 196, 1) 0%,
+    rgba(213, 58, 58, 1) 50%,
+    rgba(187, 46, 14, 1) 100%
+  );
+  z-index: 2;
+  padding: 10px 5px;
+}
+.redOverlay img {
+  height: 50px;
+}
+.title h2,
+.title h1 {
+  font-size: 42px;
+  color: blue /*var(--mainFontColor)*/;
+  text-shadow: 1px 1px 5px black;
+}
+.tttttt {
+  animation: tttttt 2.5s alternate infinite ease-in;
+}
+.nvBrand {
+  animation: tt 1s alternate infinite ease-in;
+}
+@keyframes tttttt {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes tt {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.title hr {
+  width: 259px;
+  height: 0px;
+  border: 2px solid blue /*var(--mainFontColor)*/;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #121c25;
+}
+#mainServices,
+#specialServices {
+  padding: 40px 0px;
+}
+#specialServices {
+  background-color: var(--mainBgColor);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/*start navbar edits*/
+.navbar-dark .navbar-toggler {
+  margin: 5px auto;
+}
+.customNavBar {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.customNavBar .overlay {
+  padding: 10px 0px;
+}
+header .container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.certificate img {
+  height: 60px;
+}
+
+.customNavBar img {
+  height: 80px;
+}
+.navbar .ml-auto .certificate {
+  display: inline-block;
+}
+.navbar {
+  padding: 0px;
+}
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-dark {
+  background-color: var(--mainFontColor) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  margin: 0px 30px;
+  text-align: center;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #2562ad;
+}
+/*end navbar edits*/
+
+/* start video section */
+.ParallaxVideo video {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -9999;
+}
+.ParallaxVideo h1,
+.ParallaxVideo .h1 {
+  color: #fff;
+  margin-top: 100px;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: secondFont;
+  text-shadow: 0px 0px 10px black;
+}
+.ParallaxVideo h1 span,
+.ParallaxVideo .h1 span {
+  color: blue;
+}
+.ParallaxVideo p {
+  font-size: 25px;
+  height: 40px;
+  color: white;
+  letter-spacing: 3px;
+  font-family: secondFont;
+  text-shadow: 0px 0px 10px black;
+}
+/* end video section */
+
+/* start main services section */
+.card {
+  height: 400px;
+}
+.card-title {
+  text-transform: uppercase;
+}
+.card-img-top {
+  height: 150px;
+}
+.seeMore {
+  margin-top: 20px;
+}
+.seeMore h3 {
+  font-size: 15px;
+}
+/* end main services section */
+
+/*start about us section*/
+.aboutBg {
+  background-image: url("../img/Clearing-new.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+}
+/*end about us section*/
+
+/* start contact us section */
+.homeContact .gmap_canvas iframe {
+  height: 40vh;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.contactHomeUs {
+  background-image: url(../img/vector.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactHomeUs .row {
+  padding-top: 15px;
+}
+.aaa .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* end contact us section */
+.Clients img {
+  width: 100%;
+  height: 422px;
+}
+
+/* start about us page */
+.withNoCarousel {
+  background-color: var(--mainBgColor);
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.pagesTitle,
+.pagesTitles {
+  padding-top: 30px;
+  padding-left: 50px;
+}
+.pagesTitle hr {
+  width: 18%;
+}
+#photoSection {
+  background-image: url(../img/download.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 45vh;
+}
+.mainView,
+.explaining {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.mainView span {
+  color: blue;
+}
+
+/* end about us page */
+
+/* start main services page */
+
+#mainServices {
+  background-color: white;
+  z-index: 20;
+}
+.pagesTitles hr {
+  width: 23%;
+}
+.servicesSlider .carousel-inner .carousel-item img{
+  height: 220px!important;
+}
+.servicesSlider .carousel-inner .carousel-item{
+  padding-bottom: 50px;
+}
+.carousel-indicators li{
+  margin-top: 50px;
+  background-color: var(--mainFontColor)
+}
+.explain{
+  padding: 20px 40px;
+}
+/* end main services page */
+
+/* start contact us page */
+#mapSection iframe {
+  height: 52vh;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#mapSection .col {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.contactView {
+  font-size: 18px;
+  padding-left: 20px;
+  line-height: 40px;
+}
+.contactView span {
+  color: var(--mainFontColor);
+}
+.contactView a {
+  text-decoration: none;
+  color: var(--mainFontColor);
+}
+
+/* end contact us page */
+
+/* start footer section */
+.certificate {
+  margin-right: 20px;
+}
+
+footer p {
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 3px 5px;
+}
+footer ul li {
+  margin-left: 7px;
+  text-transform: uppercase;
+}
+.foot p {
+  display: inline;
+}
+footer .copy {
+  text-align: left;
+  font-size: 15px;
+}
+footer .social {
+  font-size: 14px;
+}
+footer {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+footer .container-fluid .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+footer .container-fluid .row .col-lg-6,
+footer .container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+footer hr {
+  border-top: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px white;
+  width: 180px;
+}
+/* end footer section */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .customNavBar img {
+    margin-top: 10px;
+    height: 40px;
+  }
+  .customNavBar .brand h5 {
+    display: none;
+  }
+  .customNavBar .brand {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    display: inline-block;
+  }
+  .ParallaxVideo h1,
+  .ParallaxVideo .h1 {
+    color: #fff;
+    margin-top: 46px;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: secondFont;
+    text-shadow: 0px 0px 10px black;
+  }
+
+  .mlCarousel .card {
+    margin-bottom: 20px;
+  }
+  .seeMore h3 {
+    font-size: 12px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .customNavBar img {
+    margin-top: 10px;
+    height: 50px;
+  }
+  .customNavBar .brand h5 {
+    font-size: 15px;
+    text-align: right;
+  }
+  .customNavBar .brand {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    display: inline-block;
+  }
+  .ParallaxVideo h1,
+  .ParallaxVideo .h1 {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: secondFont;
+    text-shadow: 0px 0px 10px black;
+  }
+  .mlCarousel .card {
+    margin-bottom: 20px;
+  }
+  .seeMore h3 {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .mlCarousel .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .mlCarousel {
+    margin-left: 60px;
+  }
+  .ParallaxVideo h1,
+  .ParallaxVideo .h1 {
+    color: #fff;
+    margin-top: 70px;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: secondFont;
+    text-shadow: 0px 0px 10px black;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .mlCarousel {
+    margin-left: 60px;
+  }
+}
+.btn {
+  box-shadow: 0px 3px 10px var(--mainFontColor);
+}
